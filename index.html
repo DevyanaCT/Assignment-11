@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Express Your Mood</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-theme">
+    <div class="galaxy-background"></div>
+    <div class="container">
+        <header class="app-header">
+            <h1>✨ Mood Journal & Inspiration ✨</h1>
+            <div class="mood-selector">
+                <button class="mood-btn" data-mood="happy">😊</button>
+                <button class="mood-btn" data-mood="calm">😌</button>
+                <button class="mood-btn" data-mood="energetic">🚀</button>
+                <button class="mood-btn" data-mood="productive">🌠</button>
+                <button class="mood-btn" data-mood="creative">🌞</button>
+            </div>
+        </header>
+
+        <div class="control-panel">
+            <button id="toggleThemeBtn">🌙 Toggle Theme</button>
+            <button id="addThoughtBtn">💭 Add Thought</button>
+            <button id="shuffleBtn">🔄 Shuffle Layout</button>
+            <button id="inspireMeBtn">✨ Inspire Me</button>
+            <button id="visualizeBtn">📊 Visualize Moods</button>
+        </div>
+
+        <div class="input-section floating-card">
+            <textarea id="thoughtInput" placeholder="Write your thoughts here..."></textarea>
+            <div class="tag-container">
+                <span class="tag">#Thoughts</span>
+                <span class="tag">#Gratitude</span>
+                <span class="tag">#Goals</span>
+            </div>
+        </div>
+
+        <div id="moodChart" class="mood-chart floating-card">
+            <!-- Mood visualization will be rendered here -->
+        </div>
+
+        <div id="thoughtsGrid" class="thoughts-grid">
+            <!-- Thoughts will be added here -->
+        </div>
+
+        <div id="inspirationQuote" class="inspiration-quote floating-card">
+            <!-- Daily quote will appear here -->
+        </div>
+    </div>
+
+    <div id="notification" class="notification"></div>
+    <script src="script.js"></script>
+</body>
+</html>
